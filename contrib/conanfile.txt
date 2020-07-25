@@ -1,0 +1,17 @@
+[requires]
+glfw/3.3.2
+glew/2.1.0
+
+[imports]
+bin, *.dll -> ./lib
+lib, *.dll -> ./lib
+lib, *.so -> ./lib
+lib, *.so.* -> ./lib
+qml, * -> ./qml
+plugins, * -> ./plugins
+bin, *.pdb -> ./pdb
+bin, gst* -> ./bin
+libexec, * -> ./bin
+
+[generators]
+cmake
